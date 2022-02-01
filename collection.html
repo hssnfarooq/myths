@@ -1,0 +1,540 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Myths - Collection</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <nav class="navbar">
+            <ul class="nav-list">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Collection</a>
+              </li>
+
+              <li class="nav-item-dektop">
+                <a href="#" class="connect-wallet-btn">Connect Wallet</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="./index.html" class="brand-logo">
+            <img
+              class="brand-image"
+              src="./images/Myths-Logo.png"
+              alt="Asphalt Aces"
+            />
+          </a>
+
+          <div class="header-button">
+            <i id="menu-bar" class="fas fa-bars"></i>
+            <a href="#" class="connect-wallet-btn mobile-hide"
+              >Connect Wallet</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main-Section -->
+    <main class="main">
+      <!-- Gallery-Section -->
+      <section class="gallery">
+        <h2 class="gallery-title">Meet The Myths</h2>
+        <div class="search-box">
+          <input
+            type="search"
+            name="search-items"
+            id="search-items"
+            placeholder="Filter by Name"
+            oninput="liveSearch()"
+          />
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="gallery-content">
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Aether', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Aether</h3>
+
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Achilles.jpg','Achilles', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Achilles.jpg" alt="Achilles" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Achilles</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aeneas.jpg','Aeneas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aeneas.jpg" alt="Aeneas" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Aeneas</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Ajax the Great.jpg','Ajax the Great', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Ajax the Great.jpg" alt="Ajax" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Ajax the Great</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aphrodite.gif','Aphrodite', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aphrodite.gif" alt="Aphrodite" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Aphrodite</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Apollo', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Apollo</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Arachne', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Arachne</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Ares', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Ares</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Artemis', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Artemis</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Asteria', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Asteria</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Athena', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Athena</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Atlas', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Atlas</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Bellerophon', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Bellerophon</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Cassandra', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Cassandra</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Centaur', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Centaur</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Cerberus', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Cerberus</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Chaos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Chaos</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Charon', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Charon</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Chimera', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Chimera</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Circe', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Circe</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Coeus', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Coeus</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Crius', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Crius</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Cronos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Cronos</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Cyclops', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Cyclops</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Daedalus', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Daedalus</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Deimos', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Deimos</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Demeter', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Demeter</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- A single Card -->
+          <div
+            class="gallery-card"
+            onclick="showModal('./images/Aether.jpg','Diomedes', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa pariatur assumenda voluptatibus, sequi voluptates perferendis tempore, modi blanditiis soluta nostrum nisi magni distinctio iusto. Eaque consequatur molestias expedita nam praesentium amet quisquam maxime ipsum. Id!' )"
+          >
+            <div class="card-image">
+              <img src="./images/Aether.jpg" alt="Aether" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Diomedes</h3>
+              <button class="card-icon-btn">
+                <i class="fas fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-body">
+        <div class="modal-flex">
+          <div class="modal-img">
+            <img class="modal-content" id="img01" />
+          </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="image-title"></h2>
+              <i class="far fa-times-circle modal-icon" id="close"></i>
+            </div>
+            <p class="modal-description" id="image-description"></p>
+            <a href="#" class="modal-btn" id="image-buy-link">Open Sea</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
