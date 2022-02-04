@@ -452,9 +452,9 @@ a {
     max-width: 95%;
   }
 
-  .modal-img {
-    width: 100%;
+  .modal-img-content {
     order: 2;
+    width: 100%;
     margin-top: 2.5rem;
   }
 
@@ -468,5 +468,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .modal-body {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
   }
 }
