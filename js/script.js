@@ -37,7 +37,6 @@ function liveSearch() {
   let cards = document.querySelectorAll('.gallery-card');
   let search_query = document.getElementById('search-items').value;
   for (var i = 0; i < cards.length; i++) {
-    console.log(cards[i].innerText);
     if (cards[i].innerText.toLowerCase().includes(search_query.toLowerCase())) {
       cards[i].classList.remove('is-hidden');
     } else {
@@ -83,4 +82,4 @@ $(function () {
     },
     75
   );
-})();
+});
