@@ -267,7 +267,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  padding-top: 0.85rem;
 }
 
 .card-title {
@@ -279,12 +280,21 @@ a {
 
 .card-icon-btn {
   display: block;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
   background-color: #fff;
   border-radius: 50%;
   border: 1px solid #121212;
   cursor: pointer;
+}
+
+.collection-name {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #888282;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /* Modal */
