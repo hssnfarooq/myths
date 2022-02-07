@@ -9,12 +9,22 @@ menu.addEventListener('click', () => {
 var modal = document.getElementById('myModal');
 // Modal
 const showModal = (url, title, text) => {
+  var ext = url.split('.').pop();
+  var modalVid = document.getElementById('vid');
   var modalImg = document.getElementById('img01');
   var imageTitle = document.getElementById('image-title');
   var imageDescription = document.getElementById('image-description');
 
   modal.style.display = 'block';
-  modalImg.src = url;
+  if (ext === 'png' || ext === 'jpg' || ext === 'jpeg') {
+    modalImg.src = url;
+    modalVid.style.display = 'none';
+    modalImg.style.display = 'block';
+  } else {
+    modalVid.src = url;
+    modalImg.style.display = 'none';
+    modalVid.style.display = 'block';
+  }
   imageTitle.innerHTML = title;
   imageDescription.innerHTML = text;
 
